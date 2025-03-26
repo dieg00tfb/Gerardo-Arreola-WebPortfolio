@@ -1,0 +1,55 @@
+.navbar {
+  height: 100vh;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  box-sizing: border-box;
+  border: 2px solid #dcdcdc;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.logo {
+  width: 200px;
+  height: 70px;
+}
+
+
+ul {
+  list-style: None;
+
+
+}
+
+
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+ul li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: black;
+  display: block;
+  /* Ensure the link covers the li for clickable area */
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+
+ul li.active a {
+  border-bottom: 2px solid black;
+  /* Add a line under the active page */
+}

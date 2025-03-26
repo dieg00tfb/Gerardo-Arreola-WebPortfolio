@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons</title>
+    <link rel="stylesheet" href="Hackathons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header"></div>
+  <script>
+      fetch("header.html")
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById("header").innerHTML = data;
+          });
+  </script>
+    
+    <div class="home-container1">
+        <div class="introduction">
+            <h1 class="Name1">Privacy Dots</h1>
+            <p class="Descriptions">
+                A motion detector (a Seeed Studio XIAO ESP32C6 equipped with a motion sensor
+                connected) that sends real-time alerts to a Raspberry Pi, serving as a central hub for
+                smart home devices to connect. The Raspberry Pi, running a Django server, pushes
+                notifications to a dedicated mobile application, providing users with a
+                comprehensive platform to view and manage all their alerts seamlessly.
+            </p>
+        </div>
+        
+        <div class="dept-container">
+            <h1 class='leader'>Leadership</h1>
+            <div class='detail-boxes'>
+                <p class='about-project'>
+                  As the team lead for Privacy Dots, I guided a group of four in designing and developing <br />
+                  a motion detection system that seamlessly integrates with a mobile app to deliver real- <br />
+                  time notifications. Over the course of the project, I managed all aspects of planning, <br />
+                  task delegation, and system integration, ensuring timely delivery and exceptional <br />
+                  performance. The product was showcased at the Louisiana Tech First-Year Projects <br />
+                  Showcase, where we presented its innovative design and real-time capabilities to the <br />
+                  judges. Our project earned First Place, highlighting the success of our collaborative <br />
+                  efforts and the practical impact of our solution.
+                </p>
+                <img src="hackathon.jpg" alt="logo" class="logo-pic" />
+            </div>
+        </div>
+
+        <div class="dept-container">
+            <h1>Dots / 3D Models</h1>
+            <div class='detail-boxes'>
+                <!-- <div class='tech-box'>
+                    <img src="rpi.jpg" alt="RPi" class="tech-pic" />
+                </div> -->
+                <div class='tech-box'>
+                    <img src="Node 3D image(1).PNG" alt="3D Model" class="tech-pic" />
+                </div>
+                <div class='tech-box'>
+                    <img src="Node 3D image(2).PNG" alt="3D Model" class="tech-pic" />
+                </div>
+            </div>
+        </div>
+
+        <div class="dept-container">
+            <h1>Technology and Tools Used</h1>
+            <div class='detail-boxes'>
+                <div class='tech-box'>
+                    <img src="rpi.jpg" alt="RPi" class="tech-pic" />
+                    <p class='tech-name'>AML-S905X-CC (Le Potato)</p>
+                    <p class='tech-description'>
+                        The Raspberry Pi serves as the central hub, connecting all devices and managing alerts
+                        to the mobile app. It also operates as the Django server host.
+                    </p>
+                </div>
+                <div class='tech-box'>
+                    <img src="seeed.jpg" alt="Seeed Studio" class="tech-pic" />
+                    <p class='tech-name'>Seeed Studio XIAO ESP32C6</p>
+                    <p class='tech-description'>
+                        Configured with firmware to interface with a motion sensor for real-time detection,
+                        sending push notifications via Django server.
+                    </p>
+                </div>
+                <div class='tech-box'>
+                    <img src="sensor.jpg" alt="Sensor" class="tech-pic" />
+                    <p class='tech-name'>AM 312 Mini PIR Motion Sensor</p>
+                    <p class='tech-description'>
+                        The motion sensor is connected to the Seeed Studio XIAO ESP32C6, monitoring for motion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

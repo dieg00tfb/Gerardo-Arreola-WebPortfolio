@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header"></div>
+  <script>
+      fetch("header.html")
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById("header").innerHTML = data;
+          });
+  </script>
+    
+    <div class="Projects-container">
+        <div class="project-box">
+            <h1 class="title-project">High School / Camp</h1>
+            <p class="intro">High School Soccer Team.</p>
+            <div class="project-item">
+                <div class="iphone-container">
+                    <img src="ss-app-portrait.png" alt="app1" class="app" />
+                </div>
+            </div>
+            <p>
+                Playing for my high school soccer team was a defining experience in my football journey. Making the 
+                team was a proud achievement, and I dedicated myself to improving my skills, tactical awareness, and 
+                discipline. Competing in tournaments and league matches strengthened my resilience, teamwork, and adaptability. 
+                Under the guidance of experienced coaches and alongside talented teammates, I grew into a more confident 
+                player. Representing my school was an honor, fueling my passion for the game and my drive to excel at higher levels.
+            </p>
+            <p>
+                Playing for the Hurricanes at Pineville Soccer Association was a crucial step in my development. Over two seasons, 
+                I gained valuable experience, improved my technical skills, and built a strong foundation in teamwork and strategy. 
+                Competing in matches and training under skilled coaches helped shape me into a disciplined and determined player, preparing 
+                me for higher levels of competition.
+            </p>
+        </div>
+
+        <div class="project-box2">
+            <h1>Academy</h1>
+            <p class='wc-desc'>
+                Alicante Football Academy
+            </p>
+            <video loop muted autoplay class="custom-video">
+                <source src="ws-vid.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <p class='wc-desc'>
+                Training at Alicante Football Academy was a transformative experience. Over three months in 2021,
+                I worked with professional coaches, refining my technical skills, tactical awareness, and overall 
+                gameplay. The academy provided intense, high-level training, pushing me to elevate my performance and 
+                adapt to an elite football environment. This experience deepened my understanding of the game and prepared 
+                me for higher levels of competition.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

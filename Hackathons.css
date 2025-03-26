@@ -1,0 +1,144 @@
+.home-container1 {
+  /* display: flex; */
+  align-items: flex-start;
+  background-color: white;
+  /* Light background color */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  height: 550px;
+  margin-left: 200px;
+}
+
+p {
+  color: grey;
+}
+
+
+.team-pic {
+  width: 700px;
+  height: 450px;
+
+
+  /* Makes the image circular */
+  margin-right: 50px;
+  margin-top: 40px;
+  border: 3px solid #ccc;
+  /* Optional border */
+  object-fit: cover;
+  /* Ensures the image is properly cropped */
+}
+
+
+.Name1 {
+  margin-top: 65px;
+  font-size: 60px;
+  margin-left: 150px;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+
+
+.introduction {
+  display: flex;
+  /* Enables Flexbox layout */
+  flex-wrap: wrap;
+  /* Allows wrapping if content overflows */
+  gap: 20px;
+  /* Space between boxes */
+  justify-content: space-between;
+  /* Evenly distributes boxes horizontally */
+}
+
+
+.Descriptions {
+  margin-left: 150px;
+  font-size: 22px;
+  margin-right: 20px;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.dept-container {
+  padding: 20px;
+  border-top: 2px solid #dcdcdc;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+
+.leader {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.detail-boxes {
+  display: flex;
+  /* Enables Flexbox layout */
+  flex-wrap: wrap;
+  /* Allows wrapping if content overflows */
+  gap: 20px;
+  /* Space between boxes */
+  justify-content: space-between;
+  /* Evenly distributes boxes horizontally */
+}
+
+
+.tech-box {
+  flex: 1 1 calc(25% - 20px);
+  /* Makes boxes take up 25% of the container width */
+  /* Optional: Box background */
+
+
+  /* Optional: Box border */
+  padding: 10px;
+  /* Optional: Box padding */
+  text-align: center;
+  /* Center-align content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: Box shadow for styling */
+}
+
+
+.tech-pic {
+  max-width: 100%;
+  /* Ensures image does not exceed box width */
+  height: 250px;
+  /* Maintains aspect ratio */
+}
+
+
+.tech-description {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.about-project {
+  font-size: 22px;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.logo-pic {
+  width: 450px;
+  height: 350px;
+  border-radius: 2%;
+  border: #dcdcdc;
+}
+
+
+.tech-name {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+
+    
+    <div class="home-container-page">
+        <div class="top-sec">
+            <div class="home-introduction">
+                <h1 class="home-name">About Me</h1>
+                <p class="home-descriptions">
+                    I am a dedicated, hardworking, and highly motivated football player who thrives on challenges and consistently pushes myself 
+                    to improve. My passion for football drives me to train rigorously, develop my skills, and enhance my understanding of the game. 
+                    I believe in the power of teamwork and always encourage my teammates to strive for excellence, both individually and collectively. 
+                    Leadership is a core value I uphold, and I take pride in motivating my team, fostering a positive atmosphere, and leading by example on 
+                    and off the pitch. My ultimate goal is to play at the highest level possible, and I am committed to putting in the work necessary to achieve my dreams.
+                </p>
+            </div>
+            <div class="profile-picture-container">
+                <img src="Gera's-Profile-Pic.jpg" alt="Profile" class="profile-pic" />
+            </div>
+        </div>
+        <div class="home-dept">
+            <h1 class="skill-title">Contact Me</h1>
+            <div class="skill-boxes">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <a href="https://github.com/dieg00tfb" class="portfolio-button">+1 (318) 613 - 1841</a>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <a href="https://github.com/dieg00tfb" class="portfolio-button">arreolagerardo@icloud.com</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
